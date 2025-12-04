@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Portfolio | AHMAD ABBAS</title>
+  <meta name="description" content="Portofolio personal dengan desain futuristik, elegan, rapi, dan animasi interaktif yang memikat." />
+  <meta name="theme-color" content="#0B0F1C" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Portfolio — Showcase Futuristik | AHMAD ABBAS" />
+  <meta property="og:description" content="Portofolio personal dengan desain futuristik, elegan, rapi, dan animasi interaktif yang memikat." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (opsional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <!-- Background Elements -->
+  <div class="bg-stars parallax"></div>
+  <div class="glow-orb orb-top-right"></div>
+  <div class="glow-orb orb-bottom-left"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Brand -->
+      <a href="#hero" class="brand" aria-label="Beranda">
+        <span class="brand-mark neon-pulse" aria-hidden="true">◈</span>
+        <span class="brand-name">Ahmad Abbas</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav" aria-label="Navigasi utama" id="site-nav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Backdrop untuk mobile -->
+      <div class="nav-backdrop"></div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" aria-label="Ganti tema" title="Ganti tema">
+        <span class="icon-sun" aria-hidden="true">☀</span>
+        <span class="icon-moon" aria-hidden="true">☾</span>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-toggle" 
+              aria-label="Toggle navigasi" 
+              aria-expanded="false" 
+              aria-controls="site-nav">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero" data-animation="fadeUp">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Portofolio</p>
+          <h1 class="headline">Halo, saya <span class="accent">AHMAD ABBAS</span>.</h1>
+          <p class="subhead">Seorang <strong>Front-End Developer</strong> yang fokus pada pengalaman pengguna, performa, dan aksesibilitas. Saya membangun antarmuka modern dengan detail yang rapi.</p>
+          
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary" data-hover-animation="scaleGlow">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+            <a href="cv abbas.pdf" class="btn btn-secondary" download="CV_Ahmad_Abbas.pdf" data-hover-animation="scaleGlow">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <ul class="hero-meta">
+            <li>Berbasis di Jakarta</li>
+            <li>Siap bekerja sama </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="media-card" data-tilt data-hover-tilt='{"max": 12, "perspective": 900}'>
+            <div class="card-reflection"></div>
+            <img src="Img/abas.jpeg" alt="Foto Ahmad Abbas" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section" data-animation="fadeUp">
+      <div class="container grid-2">
+        <div class="about-content">
+          <h2 class="section-title">Tentang Saya</h2>
+          <p>Saya memiliki ketertarikan pada pengembangan antarmuka yang elegan, konsisten, dan mudah digunakan. Saya menyukai sistem desain, arsitektur front-end, serta kolaborasi lintas tim untuk menghadirkan produk yang berdampak.</p>
+          <p>Di waktu luang, saya mengeksplorasi animasi mikro, optimasi web, dan menulis tentang praktik terbaik pengembangan web.</p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card card" data-hover-animation="scaleGlow">
+            <span class="label">Pengalaman</span>
+            <span class="value">2 Tahun Belajar</span>
+          </div>
+          <div class="info-card card" data-hover-animation="scaleGlow">
+            <span class="label">Role</span>
+            <span class="value">Front-End Developer</span>
+          </div>
+          <div class="info-card card" data-hover-animation="scaleGlow">
+            <span class="label">Lokasi</span>
+            <span class="value">Jakarta, Indonesia</span>
+          </div>
+          <div class="info-card card" data-hover-animation="scaleGlow">
+            <span class="label">Email</span>
+            <a class="value link" href="mailto:abbasoc2@gmail.com">abbasoc2@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section" data-animation="fadeUp">
+      <div class="container">
+        <h2 class="section-title">Keahlian</h2>
+        <div class="skills-grid">
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">HTML</span>
+              
+            </div>
+            <div class="skill-bar" data-progress="75"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">CSS</span>
+       
+            </div>
+            <div class="skill-bar" data-progress="50"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">JavaScript</span>
+         
+            </div>
+            <div class="skill-bar" data-progress="30"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">PHP</span>
+         
+            </div>
+            <div class="skill-bar" data-progress="30"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">MySQL</span>
+          
+            </div>
+            <div class="skill-bar" data-progress="75"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">UI/UX</span>
+     
+            </div>
+            <div class="skill-bar" data-progress="70"><span></span></div>
+          </div>
+          <div class="skill card" data-hover-animation="scaleGlow">
+            <div class="skill-head">
+              <span class="skill-name">AI Prompt</span>
+           
+            </div>
+            <div class="skill-bar" data-progress="85"><span></span></div>
+          </div>
+        </div>
+
+        <ul class="skill-tags">
+          <li>Accessibility</li>
+          <li>Performance</li>
+          <li>Design System</li>
+          <li>Responsive Design</li>
+          <li>Git & CI</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section" data-animation="fadeUp">
+      <div class="container">
+        <h2 class="section-title">Proyek Terpilih</h2>
+        <div class="project-grid">
+          <article class="project-card card" data-hover-animation="scaleGlow">
+            <div class="project-media">
+              <img class="project-thumb" src="Img/kantin.png" alt="Website Kantin" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Kantin</h3>
+              <p class="project-desc">Dashboard interaktif dengan grafik dinamis, tema gelap, dan fokus pada aksesibilitas.</p>
+              <ul class="project-tags">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/abbas030208/WebKantin" class="btn btn-primary btn-sm" target="_blank" rel="noreferrer">
+                  <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon fill="currentColor" points="5,3 19,12 5,21"></polygon>
+                  </svg>
+                  <span>View Code</span>
+                </a>
+               
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card" data-hover-animation="scaleGlow">
+            <div class="project-media">
+              <img class="project-thumb" src="Img/perpustakaan.png" alt="Website Perpustakaan" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Perpustakaan</h3>
+              <p class="project-desc">Halaman pemasaran yang cepat, SEO-ready, dan teroptimasi Core Web Vitals.</p>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/abbas030208/WebPerpustakaan" class="btn btn-primary btn-sm" target="_blank" rel="noreferrer">
+                  <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon fill="currentColor" points="5,3 19,12 5,21"></polygon>
+                  </svg>
+                  <span>View Code</span>
+                </a>
+    
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card" data-hover-animation="scaleGlow">
+            <div class="project-media">
+              <img class="project-thumb" src="Img/laundry.png" alt="Website Laundry" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Laundry</h3>
+              <p class="project-desc">Kumpulan komponen konsisten dengan dokumentasi dan token desain.</p>
+              <ul class="project-tags">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/abbas030208/Laundry-Website" class="btn btn-primary btn-sm" target="_blank" rel="noreferrer">
+                  <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon fill="currentColor" points="5,3 19,12 5,21"></polygon>
+                  </svg>
+                   <span>View Code</span>
+                </a>
+                
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-form" data-animation="fadeUp">
+      <div class="container grid-2">
+        <div class="contact-content">
+          <h2 class="section-title">Kontak</h2>
+          <p>Tertarik bekerja sama atau ada pertanyaan? Silakan hubungi saya melalui formulir atau kanal berikut.</p>
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.713L.015 6h23.97L12 12.713zM12 14.787L0 8.07V18h24V8.07L12 14.787z" /></svg>
+              <a href="mailto:abbasoc2@gmail.com" class="link">abbasoc2@gmail.com</a>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M6.6 10.8a15.05 15.05 0 006.6 6.6l2.2-2.2a1 1 0 011.1-.23c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C11.4 22 2 12.6 2 2a1 1 0 011-1h4.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.23 1.1l-2.2 2.2z"/>
+              </svg>
+              <a href="tel:+6289637846088" class="link">+62 896-3784-6088</a>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.25a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+              </svg>
+              <a href="https://www.instagram.com/ahmdabbss_?igsh=dzF3eG9hMXI2OTk2" target="_blank" rel="noreferrer" class="link">Instagram</a>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66..."/>
+              </svg>
+              <a href="https://github.com/abbas030208" target="_blank" rel="noreferrer" class="link">GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xeoljvgj" method="post">
+          <div class="form-field">
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama Anda" required />
+          </div>  
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@domain.com" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-hover-animation="scaleGlow">Kirim</button>
+          <p class="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-mark">◈</span>
+        <span class="brand-name">Ahmad Abbas</span>
+        <p class="brand-tagline">Dibangun dengan gaya futuristik.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/abbas030208" class="social-link" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66..."/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/ahmdabbss_?igsh=dzF3eG9hMXI2OTk2" class="social-link" aria-label="Instagram" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.25a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
